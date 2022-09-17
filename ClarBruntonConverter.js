@@ -74,4 +74,4 @@ function bruntonClarSimple(strike,dip,dir){
 //TODO aplicar os codigos usando estruturas do DOM em HTML
 //TODO proximas versoes conseguir converter tabelas
 //TODO site OFFLINE para campo como aplicativo
-//TODO transformar essa linha para ficar mais fácil
+//TODO transformar a linha 31 aplicada ao 34 para ficar mais legivel
