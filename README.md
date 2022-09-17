@@ -7,7 +7,7 @@ Este é um código Javascript em estágio inicial para a conversão de atitudes 
 Verificar referências. 
 
 ## Como usar?
-Na atual versão(em JS), que pode ser verificada [AQUI](https://github.com/gui-nvieira/ClarBruntonConverter/tree/master), o usuário precisa inserir os valores de atitudes diretamente no código e executar em um html teste ou em um terminal Node.js. 
+Na atual versão, que pode ser verificada [AQUI](https://github.com/gui-nvieira/ClarBruntonConverter/tree/master), o usuário precisa inserir os valores de atitudes diretamente no código e executar em um html teste ou em um terminal Node.js. 
 
 1. Baixe o código e execute utilizando o Node.js ou importe em um html.
 2. Use o console para executar as seguintes funções:
