@@ -1,0 +1,38 @@
+{
+  "name": "clar_brunton_converter",
+  "version": "0.0.1",
+  "description": "Conversor de atitudes geológicas",
+  "main": "CBTeste.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gui-nvieira/ClarBruntonConverter.git"
+  },
+  "keywords": [
+    "javascript",
+    "geologia",
+    "geology",
+    "atitudes",
+    "attitude",
+    "compass",
+    "bússola"
+  ],
+  "author": "Guilherme Vieira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gui-nvieira/ClarBruntonConverter/issues"
+  },
+  "homepage": "https://github.com/gui-nvieira/ClarBruntonConverter#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@popperjs/core": "^2.11.6",
+    "autoprefixer": "^10.4.12",
+    "bootstrap": "^5.2.1",
+    "postcss-cli": "^10.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}

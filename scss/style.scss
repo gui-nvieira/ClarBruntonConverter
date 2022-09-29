@@ -1,0 +1,16 @@
+@use './custom';
+
+// IMPORTANDO OS COMPONENTES
+
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typografy';
+
+//IMPORTANDO AS SECOES
+
+@use './sections/footer';
+@use './sections/faq';
+@use './sections/intro-section';
+@use './sections/navbar';
+

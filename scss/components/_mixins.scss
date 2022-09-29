@@ -1,0 +1,6 @@
+@use '../custom' as *;
+
+// MIXINS DE GRADIENTE
+@mixin gradientBG {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}

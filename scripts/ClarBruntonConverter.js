@@ -1,4 +1,4 @@
-console.log(clarBruntonSimple(120,40));
+console.log(clarBruntonSimple(90,50));
 console.log(bruntonClarSimple(45,45,'NW'));
 
 function clarBruntonSimple(dipDir,dip){

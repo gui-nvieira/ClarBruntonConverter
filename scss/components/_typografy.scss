@@ -1,0 +1,19 @@
+@use '../custom' as *;
+@use './mixins' as *;
+
+.display-2{
+    margin-bottom: 1rem;    
+
+    &--intro{
+        display: inline-block;
+        font-weight: 700;
+        color: $white;
+    }
+
+    &--description{
+        margin-top: 1rem;
+        font-size: 2rem;
+        display: block;
+        color: $white;
+    }
+}

@@ -1,0 +1,10 @@
+#pastas
+node_modules
+webfonts
+
+#arquivos
+fontawesome.css
+fontawesome.css.map
+CBTeste.js
+theming-kit.html
+bootstrap.bundle.min.js
