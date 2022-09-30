@@ -16,12 +16,13 @@ Na atual versão, que pode ser verificada [AQUI](https://github.com/gui-nvieira/
 - bruntonClarSimple(strike,dip,dir) -> Para conversão de notação Brunton para Clar. Substitua **"strike"** pela direção, **"dip"** pelo ângulo de mergulho e **"dir"** pela direção de mergulho, em formato string e em maiúsculas.
 
 ## Próximos updates:
+- ~~Interface web com HTML/CSS, com o codigo JS minificado;~~ (30/09/2022)
+- Retoques finais e Publicação da página pelo GitHub Pages
 - Conversão de atitudes rumo para azimute (e vice-versa);
 - Melhorias para inserir direção de mergulho no formato Brunton, utilizando arrays ou objetos.
 - Explicação do conceito de maneira resumida neste README;
 
 ## Metas:
-- Interface web com HTML/CSS, com o codigo JS minificado;
 - Web app com suporte a utilização offline.
 
 ## Referências
