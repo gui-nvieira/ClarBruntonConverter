@@ -1,6 +1,10 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
-.faq{
-    @include gradientBG;  
+#faq{
+    background-color: $white;
+    margin-bottom: 5rem;
+    h2{
+        font-size: 5rem;
+    }
 }

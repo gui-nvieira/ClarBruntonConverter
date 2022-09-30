@@ -13,6 +13,11 @@
     background-color: $white;
     transition: 0.4s;
 
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    
     span{
         position: absolute;
         background-color: $green-light;
@@ -27,9 +32,8 @@
         i{
             color: $green-dark;
             font-size: 1rem;
-            line-height: 2.5rem;
+            line-height: 2.5rem;            
         }
-
     }
 
     &:hover{
