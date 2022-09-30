@@ -54,59 +54,65 @@
 
                 </div>
                 <div class="col2 col-md-6 intros">
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Accordion Item #1
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><form>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                          </div>
-                          <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                          </div>
-                          <button type="submit" class="btn btn-primary form-button">Submit</button>
-                        </form>
+                    <!-- aa
+                  Formulario Clar Brunton
+                  aa -->
+                  <div class="formulario col-sm">
+                      <div class="formularioClarBrunton form">
+                        <h2 class="titleforms">Clar para Brunton</h2>
+                        <p>(Dip Direction/Dip ➡️ Strike/Dip)</p>
+                        <form>
+                        <label for="dipDir1">Direção do mergulho (Dip Direction)</label>
+                        <input type="text" class="form-control form-control-sm" id="dipDir1" placeholder="Insira a direção do dip">
                       </div>
+                      <div class="formularioClarBrunton form">
+                        <label for="dip1">Ângulo do mergulho (Dip)</label>
+                        <input type="text" class="form-control form-control-sm" id="dip1" placeholder="Insira o mergulho do dip">
                       </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Accordion Item #2
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      <div class="button">
+                        <button type="button" class="btn btn-primary formularioClarBrunton form" onclick="clarBruntonSite()">Converter</button>
+                        <p class="resultadoClarBrunton"id="resultado">Resultado:</p>
+                        <p class="resultadoClarBrunton" id="resultadoClarBrunton">Lel</p></div>
+                      </form>
+                      <div class="separador"></div>          
+                    <!-- aa
+                    Formulario Brunton Clar
+                    aa -->                
+                      <div class="formularioBruntonClar form">
+                        <h2 class="titleforms">Brunton para Clar</h2>
+                        <p>(Strike/Dip ➡️ Dip Direction/Dip)</p>
+                        <form>
+                        <label for="dipDir1">Direção do plano (Strike)</label>
+                        <input type="text" class="form-control form-control-sm" id="strike" placeholder="Insira a direção do dip">
                       </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                          Accordion Item #3
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      <div class="formularioBruntonClar form">
+                        <label for="dip1">Ângulo de mergulho (Dip)</label>
+                        <input type="text" class="form-control form-control-sm" id="dip2" placeholder="Insira o mergulho do dip">
                       </div>
-                    </div>
-                  </div>                        
+                      <div class="formularioBruntonClar form">
+                          <label for="exampleFormControlSelect1">Escolha a direção do mergulho</label>
+                          <select class="form-control" id="dir">
+                            <option>NE</option>
+                            <option>NW</option>
+                            <option>SE</option>
+                            <option>SW</option>
+                            <option>N</option>
+                            <option>S</option>
+                            <option>E</option>
+                            <option>W</option>
+                          </select>
+                      </div>
+                      <div class="button">
+                        <button type="button" class="btn btn-primary formularioBruntonClar form" onclick="bruntonClarSite()">Converter</button>
+                        <p class="resultadoClarBrunton"id="resultado">Resultado:</p>
+                        <p class="resultadoClarBrunton" id="resultadoBruntonClar">Lel</p></div>
+                      </div>                    
+                      </form>
                     
-
+                  </div>
                 </div>
             </div>
-        </div>
+          </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#fff" fill-opacity="1" d="M0,320L102.9,224L205.7,128L308.6,192L411.4,192L514.3,224L617.1,96L720,224L822.9,192L925.7,160L1028.6,288L1131.4,320L1234.3,160L1337.1,288L1440,320L1440,320L1337.1,320L1234.3,320L1131.4,320L1028.6,320L925.7,320L822.9,320L720,320L617.1,320L514.3,320L411.4,320L308.6,320L205.7,320L102.9,320L0,320Z"></path>
           </svg>
@@ -223,5 +229,6 @@
       </footer>
     <script src="./scripts/bootstrap.bundle.min.js"></script>
     <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/CBTeste.js"></script>
   </body>
 </html>
