@@ -1,9 +1,5 @@
 #pastas
 node_modules
-webfonts
 
 #arquivos
-fontawesome.css
-fontawesome.css.map
 theming-kit.html
-bootstrap.bundle.min.js
