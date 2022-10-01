@@ -4,7 +4,7 @@ function clarBruntonSite(){
     const dipAux= document.getElementById('dip1').value;
     const dip=parseInt(dipAux);
     if(!dipDirAux||!dipAux){
-        document.getElementById('resultadoClarBrunton').innerHTML='Erro';
+        document.getElementById('resultadoClarBrunton').innerHTML='Insira Valores';
     }
     else{
         document.getElementById('resultadoClarBrunton').innerHTML=clarBruntonSimple(dipDir,dip);
@@ -18,7 +18,7 @@ function bruntonClarSite(){
     const dip=parseInt(dipAux); 
     const dir=document.getElementById('dir').options[document.getElementById('dir').selectedIndex].text;
     if(!strikeAux&&!dip){
-        document.getElementById('resultadoBruntonClar').innerHTML='Erro';
+        document.getElementById('resultadoBruntonClar').innerHTML='Insira Valores';
     }
     else{
         document.getElementById('resultadoBruntonClar').innerHTML=bruntonClarSimple(strike,dip,dir);
