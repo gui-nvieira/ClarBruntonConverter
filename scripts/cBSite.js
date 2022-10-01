@@ -4,7 +4,7 @@ function clarBruntonSite(){
     const dipAux= document.getElementById('dip1').value;
     const dip=parseInt(dipAux);
     if(!dipDirAux||!dipAux){
-        document.getElementById('resultadoClarBrunton').innerHTML='Erro nos valores';
+        document.getElementById('resultadoClarBrunton').innerHTML='Erro';
     }
     else{
         document.getElementById('resultadoClarBrunton').innerHTML=clarBruntonSimple(dipDir,dip);
@@ -18,7 +18,7 @@ function bruntonClarSite(){
     const dip=parseInt(dipAux); 
     const dir=document.getElementById('dir').options[document.getElementById('dir').selectedIndex].text;
     if(!strikeAux&&!dip){
-        document.getElementById('resultadoBruntonClar').innerHTML='Erro nos valores';
+        document.getElementById('resultadoBruntonClar').innerHTML='Erro';
     }
     else{
         document.getElementById('resultadoBruntonClar').innerHTML=bruntonClarSimple(strike,dip,dir);
@@ -27,7 +27,7 @@ function bruntonClarSite(){
 }
 
 function clarBruntonSimple(dipDir,dip){
-    if (dip>90 || dip<0) return 'Erro';
+    if (dip>90 || dip<0) return 'Erro: dip maior que 90°';
     if (dip === 0 || dip === 90) {
         return dip === 90 
         ?
@@ -47,7 +47,7 @@ function clarBruntonSimple(dipDir,dip){
     }
     if (dipDir>0 && dipDir<90) return `${dipDir+270}/${dip}NE`;
     if (dipDir>90 && dipDir<180) return `${dipDir-90}/${dip}SE`;
-    if (dipDir>180 && dipDir<270) return `${dipDir-90}/${dip}SW`;
+    if (dipDir>180 && dipDir<270) return `${dipDir+90}/${dip}SW`;
     if (dipDir>270 && dipDir<360) return `${dipDir-270}/${dip}NW`;
     else return 'Erro';
  }
@@ -69,7 +69,7 @@ function bruntonClarSimple(strike,dip,dir){
         :
         '180/'+dip;
     }
-    if (strike===0 || strike===360){
+    if (strike===0 || strike===360 || strike===180){
         return dir=='E' ?
         '90/'+dip
         :
@@ -77,7 +77,7 @@ function bruntonClarSimple(strike,dip,dir){
     }
     if (strike>270 && strike<360){ 
         return dir == 'NE' ?
-        (360-strike)+'/'+dip 
+        (strike-270)+'/'+dip 
         :
         dir =='SW' ?
         (strike-90)+'/'+dip 
@@ -93,10 +93,6 @@ function bruntonClarSimple(strike,dip,dir){
         :
         'Erro: Strike no quadr. do dip';
     }
-    else return 'Erro de valores';
+    else return 'Erro';
 }
 
-//TODO aplicar os codigos usando estruturas do DOM em HTML
-//TODO proximas versoes conseguir converter tabelas
-//TODO site OFFLINE para campo como aplicativo
-//TODO transformar a linha 31 aplicada ao 34 para ficar mais legivel
