@@ -53,10 +53,9 @@ function clarBruntonSimple(dipDir,dip){
  }
 
 function bruntonClarSimple(strike,dip,dir){
-//    const card= ['NE','NW','SE','SW','N','S','E','W']; ver como trabalhar os arrays para ser possível diminuir o if
+    const card= ['NE','NW','SE','SW','N','S','E','W'];
     if (dip>90 || dip<0) return 'Erro no valor do Dip Angle';
-    if (dir!='NE'&&dir!='NW'&&dir!='SE'&&dir!='SW'&&dir!='N'&&dir!='E'&&dir!='S'&&dir!='W') return 'Erro de Dip Direction';
-//    if (dir!=) return 'Erro de Dip Direction';
+    if (!card.includes(dir)) return 'Erro de Dip Direction';
     if (dip==0 || dip ==90) {
         return dip == 0 ?
         'Horizontal'
