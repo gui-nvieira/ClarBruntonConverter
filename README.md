@@ -26,7 +26,7 @@ Já é possível fazer a conversão via WEB por [AQUI](https://gui-nvieira.githu
 
 ## Próximos updates:
 - ~~Interface web com HTML/CSS com SASS, Bootstrap e Node;~~ (30/09/2022)
-- ~~ Retoques finais e Publicação da página pelo GitHub Pages.~~ (03/10/2022)
+- ~~Retoques finais e Publicação da página pelo GitHub Pages.~~ (03/10/2022)
 - ~~Melhorias para inserir direção de mergulho no formato Brunton, utilizando arrays ou objetos.~~ (03/10/2022)
 - ~~Inserção do site no Google Search Console.~~ (05/10/2022)
 - Conversão de atitudes rumo para azimute (e vice-versa).
