@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Conversor de Atitudes Geológicas</title>
+    <title>Conversor de Atitudes Geológicas 🧭</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css" class="rel">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
@@ -39,10 +39,12 @@
             <div class="row">
                 <div class="col1 col-md-6 intros">
                     <h1 class="display-2">
-                        <span class="display-2--intro">Conversor de atitudes planares geológicas </span>
-                        <span class="display-2--description">Converta sua atitude medida com bússola Clar ou Brunton</span>
-                        <span class="display-2--description">(Medidas em Azimute)</span>
-                      </h1>
+                        <span class="display-2--intro">Conversor de atitudes planares geológicas</span>
+                    </h1>
+                    <h2>
+                        <span class="display-3--description text-muted">Converta sua atitude medida com bússola Clar ou Brunton</span>
+                        <span class="display-3--description text-muted">(Medidas em Azimute)</span>
+                    </h2>  
                       <div class="img"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <polyline points="8 16 10 10 16 8 14 14 8 16" />
@@ -136,7 +138,13 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>Em Breve</strong>
+                        <p>Basicamente este é um conversor para converter medidas Clar em Brunton e vice-versa.
+                          Este tipo de medida é utilizado por geólogos(as) para definir a posição espacial
+                          de elementos planares na natureza.
+                        </p>
+                        <p>
+                          Este conversor foi criado por <strong>Guilherme Vieira</strong> e seu código fonte pode ser encontrado em seu <strong><a href="https://github.com/gui-nvieira/ClarBruntonConverter">repositório Github</a></strong>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -144,12 +152,37 @@
                   <div class="accordion-item shadow mb-3">
                     <h2 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Como ele funciona?
+                        O que são atitudes geológicas?
                       </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>Em Breve</strong>
+                        <p>
+                          Para entender o conceito de atitudes planares é bastante interessante visualizar o que seriam os planos e como eles são medidos.
+                          Por conta disso, deixarei esta imagem abaixo para que acompanhe a explicação:
+                        </p>
+                        <img class="img-fluid rounded" src="./assets/imagens/strike-dip.jpg" alt="Atitudes planares geológias exemplificadas por acamamento sedimentar">
+                        <a href="https://www.quora.com/How-can-I-visualize-the-strike-dip-amount-and-dip-direction-practically/answer/Darcy-Cordell">Fonte</a><br><br>
+                        <p>Sempre utilizaremos o Norte (North) e o plano horizontal, que na imagem é representada pela água, como referências.</p>
+                        <p>Na medida tomada via bússola Brunton usamos o Strike do plano (interseção com o plano horizontal) 
+                          e o ângulo de mergulho (na imagem é o "Angle of dip"). Além disso, devemos indicar para qual lado 
+                          o plano está se dirigindo, pois a interseção do plano a ser medido e a horizontal tem duas possibilidades 
+                          de mergulho (dip direction).</p>
+                        <p>
+                          Também é importante notar que na medida brunton apenas se utiliza o 1º e o 4º quadrante do diagrama polar da bússola,
+                           seja em rumo ou Azimute. Ou seja, a medida do Strike estará sempre entre 360°(ou 0°) e 90° ou 270° e 360°(ou 0°).
+                            Esta é uma conveção que facilitam os estudos entre os especialistas.
+                        </p>
+                        <p>
+                          Na medida tomada pela bússola Clar apenas se utiliza a linha paralela ao mergulho do plano (Dip Direction) 
+                          e o quanto está mergulhando, sempre em relação as referências (Norte e o plano horizontal).
+                        </p>
+                        <p>
+                          Aqui é possível visualizar em campo como são tomadas essas medidas:
+                        </p>
+                        
+                          <img class="img-fluid rounded" src="./assets/imagens/medida-campo.png" alt="Exemplo de medida em campo"><a href="https://fractalplanet.wordpress.com/2014/03/15/understanding-strike-and-dip-on-geologic-maps/">Fonte</a>
+                        <br>                       
                       </div>
                     </div>
                   </div>
