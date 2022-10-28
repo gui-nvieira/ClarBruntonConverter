@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Conversor de Atitudes Geológicas 🧭</title>
+    <meta name="description" content="Converta medidas Brunton em Clar e vice-versa🧭. Conversor de atitudes geológicas">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css" class="rel">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
@@ -64,12 +65,12 @@
                         <h2 class="titleforms">Clar para Brunton</h2>
                         <p>(Dip Direction/Dip ➡️ Strike/Dip)</p>
                         <form>
-                        <label for="dipDir1">Direção do mergulho (Dip Direction)</label>
-                        <input type="text" class="form-control form-control-sm" id="dipDir1" placeholder="Insira a direção do dip">
+                        <label for="dipDir1">Sentido de mergulho (Dip Direction)</label>
+                        <input type="text" class="form-control form-control-sm" id="dipDir1" placeholder="Insira o valor azimutal do sentido de mergulho">
                       </div>
                       <div class="formularioClarBrunton form">
                         <label for="dip1">Ângulo do mergulho (Dip)</label>
-                        <input type="text" class="form-control form-control-sm" id="dip1" placeholder="Insira o mergulho do dip">
+                        <input type="text" class="form-control form-control-sm" id="dip1" placeholder="Insira o valor angular do mergulho">
                       </div>
                       <div class="button">
                         <button type="button" class="btn btn-primary formularioClarBrunton form" onclick="clarBruntonSite()">Converter</button>
@@ -85,14 +86,14 @@
                         <p>(Strike/Dip ➡️ Dip Direction/Dip)</p>
                         <form>
                         <label for="dipDir1">Direção do plano (Strike)</label>
-                        <input type="text" class="form-control form-control-sm" id="strike" placeholder="Insira a direção do dip">
+                        <input type="text" class="form-control form-control-sm" id="strike" placeholder="Insira o valor azimutal da direção do plano">
                       </div>
                       <div class="formularioBruntonClar form">
                         <label for="dip1">Ângulo de mergulho (Dip)</label>
-                        <input type="text" class="form-control form-control-sm" id="dip2" placeholder="Insira o mergulho do dip">
+                        <input type="text" class="form-control form-control-sm" id="dip2" placeholder="Insira o valor angular do mergulho">
                       </div>
                       <div class="formularioBruntonClar form">
-                          <label for="exampleFormControlSelect1">Escolha a direção do mergulho</label>
+                          <label for="exampleFormControlSelect1">Escolha o sentido do mergulho</label>
                           <select class="form-control" id="dir">
                             <option>NE</option>
                             <option>NW</option>
@@ -195,7 +196,8 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        O <a href="https://edisciplinas.usp.br/pluginfile.php/5178772/mod_resource/content/1/Aula-B%C3%BAssolas%20-%20CRP.pdf"><strong>material de referência</strong></a> consultado sobre os sistemas de atitudes e bússolas foi produzido pela a Profa. Dra. Cláudia R. Passarelli, da Geologia-USP.
+                        <p>O <a href="https://edisciplinas.usp.br/pluginfile.php/5178772/mod_resource/content/1/Aula-B%C3%BAssolas%20-%20CRP.pdf"><strong>material de referência</strong></a> consultado sobre os sistemas de atitudes e bússolas foi produzido pela a Profa. Dra. Cláudia R. Passarelli, da Geologia-USP.</p>
+                        <p>Agradeço muito ao professor Alan Miranda, da Geologia-UFRRJ que fez a correção dos conceitos a serem aplicados à plataforma.</p>
                       </div>
                     </div>
                   </div>
